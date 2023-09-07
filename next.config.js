@@ -15,13 +15,7 @@ function scanSubdirectories(directory) {
   const subdirectories = []
 
   fs.readdirSync(directory).forEach(file => {
-    const fullPath = path.join(directory, file)
-    const stats = fs.statSync(fullPath)
-
-    // landing主题比较特殊，不在可切换的主题中显示
-    if (stats.isDirectory() && file !== 'landing') {
-      subdirectories.push(file)
-    }
+    subdirectories.push('gitbook')
   })
 
   return subdirectories
