@@ -21,7 +21,7 @@ export default function TopNavBar(props) {
   const { locale } = useGlobal()
 
   const defaultLinks = [
-    { icon: 'fas fa-search', name: locale.NAV.SEARCH, to: '/search', show: CONFIG.MENU_SEARCH }
+   // { icon: 'fas fa-search', name: locale.NAV.SEARCH, to: '/search', show: CONFIG.MENU_SEARCH }
   ]
 
   let links = defaultLinks.concat(customNav)
