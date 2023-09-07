@@ -10,10 +10,7 @@ export const MenuBarMobile = (props) => {
 
   let links = [
     // { name: locale.NAV.INDEX, to: '/' || '/', show: true },
-    { name: locale.COMMON.CATEGORY, to: '/category', show: CONFIG.MENU_CATEGORY },
-    { name: locale.COMMON.TAGS, to: '/tag', show: CONFIG.MENU_TAG },
-    { name: locale.NAV.ARCHIVE, to: '/archive', show: CONFIG.MENU_ARCHIVE }
-    // { name: locale.NAV.SEARCH, to: '/search', show: CONFIG.MENU_SEARCH }
+     { name: locale.NAV.SEARCH, to: '/search', show: CONFIG.MENU_SEARCH }
   ]
 
   if (customNav) {
